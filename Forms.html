@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.grid-container{
+    display: grid;
+    width: 16%;
+    grid-template-columns: repeat(2,1fr);
+}
+.grid-item{
+    margin-top: 10px;
+}
+.grid-item label{
+    display: block;
+}
+.grid-item input,.grid-item textarea,.grid-item label{
+    margin-top: 13px;
+}
+.grid-item button{
+    margin-top: 20px;
+
+}
+
+</style>
+<body>
+    <H3>Conatact Us:</H3>
+    <form>
+        <div class="grid-container">
+            <div class="grid-item">
+                <label>Name:</label>
+                <label>Email:</label>
+                <label>Subject:</label>
+                <label>Message:</label>
+            </div>
+            <div class="grid-item">
+                <input type="username" name="username"><br>
+                <input type="email" name="email"><br>
+                <input type="text" name="Subject"><br>
+                <textarea name="Message" rows="5" cols="28"></textarea><br>
+                <button type="submit" value="Send Message">Send Message</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
